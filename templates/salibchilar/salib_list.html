@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+      {% block title %}
+
+      Salib yurushlari
+
+      {% endblock %}
+  </title>
+  <!-- Bootstrap CSS kutubxonasi -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar (menyu) -->
+  <nav class="navbar navbar-expand-lg navbar-warning bg-secondary">
+    <div class="container">
+        <a class="navbar-brand" href="#"><h1>Salibchilar</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href='{% url 'salib_bir' %}'>
+                <h5>Birinchi salib yurishi</h5>
+            </a>
+          </li>
+          <li class="nav-item">
+
+          <li class="nav-item">
+            <a class="nav-link" href='{% url 'salib_ikki' %}'>
+                <h5>Ikkinchi salib yurishi</h5>
+            </a>
+          </li>
+          <li class="nav-item">
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href='{% url 'salib_uch' %}'>
+                <h5>Uchinchi salib yurishi</h5>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Asosiy konteyner -->
+  <div class="container p-5 my-5 bg-dark text-white">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Salib yurishlari</h1>
+        <p>Salib yurishlari  — 1096-1270-yillarda Gʻarbiy Yevropa zodagonlari va katolik cherkovi tomonidan Yaqin Sharqqa (Suriya, Falastin, Shimoliy Afrika) qilingan bosqinchilik urushlari.
+            Salib yurishlarining bosqinchilik mohiyati diniy shiorlar (gʻayridin (musulmonlar)larga qarshi kurash va „xudo qabri“ hamda „muqaddas yer“ (Falastin)ni ozod qilish) bilan niqoblangan.
+            Salibchilar, odatda, kiyimlariga salib (xoch) belgisini tikib olishgan (yurishlarning nomi shundan). XI-asrning soʻnggi choragida saljuqiylar tomonidan Vizantiyaning Kichik Osiyodagi
+            yerlarini hamda diniy anʼana boʻyicha „muqaddas shahar“ boʻlgan Quddusni egallab olishlari salibchilarning Oʻrta dengizning sharqidagi yerlarga bostirib kirishiga sabab boʻlgan.
+            Vizantiya saljuqiylarga qarshi kurashish uchun Gʻarbdagi davlatlardan bir necha bor harbiy yordam soʻragan. Salib yurishlarining bevosita tashkilotchisi boʻlgan Rim papasi bundan foydalangan.
+            Papalar katolik cherkovining taʼsirini kuchaytirish va kengaytirish, pravoslav cherkovini Rimga boʻysundirish maqsadida diniy fanatizmni avj oldirganlar. Salibchilarning koʻpchiligini qashshoqlashib qolgan ritsarlar,
+            yirik senʼorlar hamda dehqonlar tashkil qilgan.</p>
+        <a href='{% url 'salib_umumiy' %}'
+           class="btn btn-primary">Ko'proq o'rganish</a>
+      </div>  <br>
+
+
+
+      <div class="col-md-4">
+        <img src="https://savol-javoblar.darakchi.net/uploads/posts/2023-10/salib-yurishlari-sabablari-1.jpg"
+             class="img-thumbnail" alt="Cinque Terre">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Past konteyner -->
+  <footer class="mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">© 2024 Machine Learning</span>
+    </div>
+  </footer>
+
+        <a href='{% url 'theme_list' %}'>  <h3>Ma`lumot qo`shish</h3>> </a>
+
+
+  <!-- Bootstrap JS kutubxonasi -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
